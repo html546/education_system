@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="title"></div>
+        <div class="layui-container">
+            <div class="layui-row">
+                <div class="layui-col-md8 login-left"></div>
+                <div class="layui-col-md4 login-right">
+                    <div class="panel">
+                        <div class="panel_1">
+                            <div class="tab">
+                                <a href="javascript:;" :class="{active:is_active}" @click="is_active = !is_active">代理机构</a>
+                                <a href="javascript:;" :class="{active:!is_active}" @click="is_active = !is_active">从业人员</a>
+                            </div>
+                            <keep-alive>
+
+                                <div class="input_group" v-show="is_active">
+                                    <div class="input1" :class="{active1:is_active1}">
+                                        <p></p>
+                                        <input type="text" placeholder="请输入用户名" @focus="is_active1 = true" @blur="is_active1=false">
+                                    </div>
+                                    <div class="input1 input2" :class="{active1:is_active2}">
+                                        <p></p>
+                                        <input type="password" placeholder="密码" @focus="is_active2 = true" @blur="is_active2=false">
+                                    </div>
+                                    <div class="check_group">
+                                        <div class="check_group_left">
+                                            <div class="check">
+                                                <input type="checkbox" v-model="check" id="check">
+                                                <span class="falsy_check"></span>
+                                            </div>
+                                            <label for="check">下次自动登录</label>
+                                        </div>
+                                        <div class="check_group_right">
+                                            <a href="./forget.html">忘记密码</a>
+                                        </div>
+                                    </div>
+                                    <button class="login">登录</button>
+                                </div>
+                            </keep-alive>
+                            <keep-alive>
+
+                                <div class="input_group" v-show="!is_active">
+                                    <div class="input1" :class="{active1:is_active3}">
+                                        <p></p>
+                                        <input type="text" placeholder="请输入用户名" @focus="is_active3 = true" @blur="is_active3=false">
+                                    </div>
+                                    <div class="input1 input2" :class="{active1:is_active4}">
+                                        <p></p>
+                                        <input type="password" placeholder="密码"  @focus="is_active4 = true" @blur="is_active4=false">
+                                    </div>
+                                    <div class="check_group">
+                                        <div class="check_group_left">
+                                            <div class="check">
+                                                <input type="checkbox" v-model="check" id="check">
+                                                <span class="falsy_check"></span>
+                                            </div>
+                                            <label for="check">下次自动登录</label>
+                                        </div>
+                                        <div class="check_group_right">
+                                            <a href="./forget.html">忘记密码</a>
+                                        </div>
+                                    </div>
+                                    <button class="login">登录</button>
+                                    <p>还没有账号?
+                                        <a href="./register.html">立即注册</a>
+                                    </p>
+                                </div>
+                            </keep-alive>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./layui/layui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                is_active: true,
+                is_active1: false,
+                is_active2:false,
+                is_active3:false,
+                is_active4:false,
+                check: true
+            },
+            methods: {
+                changeActive() {
+                    this.is_active = !this.is_active;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

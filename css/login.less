@@ -1,0 +1,207 @@
+@base: 100%;
+body,
+html {
+    background: url(../images/bg.png) no-repeat center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+/* @media (min-width:1440px){
+    .title{
+        width: 840px;
+        height: 43.5px;
+        margin: 168.75px auto 0;
+        background: url(../images/login_title.png) no-repeat center;
+        background-size: cover;
+    }
+} */
+
+// @media (min-width:1680px){
+.title {
+    width: 1120px;
+    height: 58px;
+    margin: 100px auto 0;
+    background: url(../images/login_title.png) no-repeat center;
+    background-size: cover;
+}
+
+// }
+.login-left {
+    width: 664px;
+    height: 452px;
+    background: url(../images/login_left.png) no-repeat center;
+    background-size: 80%;
+    margin-top: 79px;
+}
+
+.login-right {
+    .panel {
+        width: 370px;
+        height: 438px;
+        background: #fff;
+        margin-top: 85px;
+        box-shadow: 0 0 10px #5c8ee3;
+        padding: 44px 40px 0 35px;
+        box-sizing: border-box;
+        .panel_1 {
+            display: block;
+            .tab {
+                width: 100%;
+                overflow: hidden;
+                a {
+                    display: block;
+                    width: 50%;
+                    height: 50px;
+                    color: #aeaeae;
+                    border-bottom: 3px solid #aeaeae;
+                    text-align: center;
+                    line-height: 50px;
+                    float: left;
+                }
+                a.active {
+                    color: #087fff;
+                    border-bottom: 3px solid #087fff;
+                }
+            }
+            .input_group {
+                width: 100%;
+                margin-top: 48px;
+                height: auto;
+                .input1 {
+                    width: calc(100% - 2px);
+                    height: 48px;
+                    overflow: hidden;
+                    border: 1px solid #dfdfdf;
+                    &.active1 {
+                        border: 1px solid #087fff;
+                    }
+                    p {
+                        width: 49px;
+                        height: 48px;
+                        background: #f7f7f7;
+                        float: left;
+                        position: relative;
+                        &::after {
+                            content: url(../images/mobile.png);
+                            width: 18px;
+                            height: 26px;
+                            position: absolute;
+                            top: 11px;
+                            left: 15px;
+                        }
+                    }
+                    input {
+                        width: calc(100% - 50px);
+                        height: 48px;
+                        float: left;
+                        border: none;
+                        font-size: 16px;
+                        text-indent: 1em;
+                        &::-webkit-input-placeholder {
+                            color: #cecece;
+                        }
+                        &::-moz-input-placeholder {
+                            color: #cecece;
+                        }
+                        &::-moz-placeholder {
+                            color: #cecece;
+                        }
+                        &::-ms-input-placeholder {
+                            color: #cecece;
+                        }
+                    }
+                }
+                .input2 {
+                    margin-top: 18px;
+                    p {
+                        &::after {
+                            content: url(../images/key.png);
+                            width: 23px;
+                            height: 23px;
+                            position: absolute;
+                            top: 13px;
+                            left: 13px;
+                        }
+                    }
+                }
+                .check_group {
+                    margin-top: 18px;
+                    overflow: hidden;
+                    height: 20px;
+                    .check_group_left {
+                        float: left;
+                        overflow: hidden;
+                        .check {
+                            position: relative;
+                            width: 14px;
+                            height: 14px;
+                            float: left;
+                            input[type="checkbox"] {
+                                width: 14px;
+                                height: 14px;
+                                opacity: 0;
+                                position: absolute;
+                                top: 2px;
+                                left: 0;
+                                z-index: 100;
+                                &:checked+.falsy_check {
+                                    background: url(../images/check.png) no-repeat center;
+                                    background-size: cover;
+                                }
+                            }
+                            .falsy_check {
+                                width: 14px;
+                                height: 14px;
+                                position: absolute;
+                                background: url(../images/no_check.png) no-repeat center;
+                                background-size: cover;
+                                display: inline-block;
+                                top: 2px;
+                                left: 0;
+                            }
+                        }
+                        label {
+                            float: left;
+                            font-size: 14px;
+                            color: #626262;
+                            margin-left: 5px;
+                        }
+                    }
+                    .check_group_right {
+                        float: right;
+                        a{
+                            display: block;
+                            color: #626262;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                button.login{
+                    width: 100%;
+                    height: 50px;
+                    background: #087fff;
+                    color: #ffffff;
+                    font-size: 20px;
+                    line-height: 50px;
+                    border-radius: 4px;
+                    border: none;
+                    margin-top: 28px;
+                    cursor: pointer;
+                }
+                >p{
+                    font-size: 14px;
+                    margin-top: 20px;
+                    width: 100%;
+                    text-align: center;
+                    a{
+                        color: #087fff;
+                        text-decoration: underline;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

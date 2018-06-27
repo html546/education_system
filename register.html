@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/forget.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="title"></div>
+        <div class="layui-container">
+            <div class="layui-row">
+                <div class="layui-col-md8 login-left"></div>
+                <div class="layui-col-md4 login-right">
+                    <div class="panel">
+                        <div class="panel_1">
+                            <div class="tab">
+                                <a href="javascript:;" :class="{active:is_active}" @click="is_active = !is_active">代理机构</a>
+                                <a href="javascript:;" :class="{active:!is_active}" @click="is_active = !is_active">从业人员</a>
+                            </div>
+                            <keep-alive>
+                                <div class="input_group" v-show="is_active">
+                                    <div class="input1 input4" :class="{active1:is_active4}">
+                                        <p></p>
+                                        <input type="text" placeholder="代理机构名称" @focus="is_active4 = true" @blur="is_active4 = false">
+                                    </div>
+                                    <div class="input1 input5" :class="{active1:is_active5}">
+                                        <p></p>
+                                        <input type="text" placeholder="社会统一信用证码" @focus="is_active5 = true" @blur="is_active5 = false">
+                                    </div>
+                                    <div class="input1" :class="{active1:is_active1}">
+                                        <p></p>
+                                        <input type="text" placeholder="请输入手机号" @focus="is_active1 = true" @blur="is_active1 = false">
+                                    </div>
+                                    <div class="input1 input3" :class="{active1:is_active3}">
+                                        <p></p>
+                                        <input type="text" placeholder="验证码" @focus="is_active3 = true" @blur="is_active3 = false">
+                                        <button>发送验证码</button>
+                                    </div>
+                                    <div class="input1 input2" :class="{active1:is_active2}">
+                                        <p></p>
+                                        <input type="password" placeholder="密码" @focus="is_active2 = true" @blur="is_active2 = false">
+                                    </div>
+                                    <div class="check_group">
+                                        <div class="check_group_left">
+                                            <div class="check">
+                                                <input type="checkbox" v-model="check" id="check">
+                                                <span class="falsy_check"></span>
+                                            </div>
+                                            <label for="check">同意
+                                                <a href="javascript:;">注册协议</a>和
+                                                <a href="javascript:;">隐私协议</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="login">注册</button>
+                                </div>
+                            </keep-alive>
+                            <keep-alive>
+                                <div class="input_group" v-show="!is_active">
+                                    <div class="input1 input4" :class="{active1:is_active4_1}">
+                                        <p></p>
+                                        <input type="text" placeholder="代理机构名称" @focus="is_active4_1 = true" @blur="is_active4_1 = false">
+                                    </div>
+                                    <div class="input1 input5" :class="{active1:is_active5_1}">
+                                        <p></p>
+                                        <input type="text" placeholder="社会统一信用证码" @focus="is_active5_1 = true" @blur="is_active5_1 = false">
+                                    </div>
+                                    <div class="input1" :class="{active1:is_active1_1}">
+                                        <p></p>
+                                        <input type="text" placeholder="请输入手机号" @focus="is_active1_1 = true" @blur="is_active1_1 = false">
+                                    </div>
+                                    <div class="input1 input3" :class="{active1:is_active3_1}">
+                                        <p></p>
+                                        <input type="text" placeholder="验证码" @focus="is_active3_1 = true" @blur="is_active3_1 = false">
+                                        <button>发送验证码</button>
+                                    </div>
+                                    <div class="input1 input2" :class="{active1:is_active2_1}">
+                                        <p></p>
+                                        <input type="password" placeholder="密码" @focus="is_active2_1 = true" @blur="is_active2_1 = false">
+                                    </div>
+                                    <div class="check_group">
+                                        <div class="check_group_left">
+                                            <div class="check">
+                                                <input type="checkbox" v-model="check" id="check">
+                                                <span class="falsy_check"></span>
+                                            </div>
+                                            <label for="check">同意
+                                                <a href="javascript:;">注册协议</a>和
+                                                <a href="javascript:;">隐私协议</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="login">注册</button>
+                                </div>
+                            </keep-alive>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./layui/layui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: "#app",
+            data: {
+                is_active: true,
+                is_active1: false,
+                is_active1_1: false,
+                is_active2: false,
+                is_active2_1: false,
+                is_active3: false,
+                is_active3_1: false,
+                is_active4: false,
+                is_active4_1: false,
+                is_active5: false,
+                is_active5_1: false,
+                check: true
+            },
+            methods: {
+                changeActive() {
+                    this.is_active = !this.is_active;
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

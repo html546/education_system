@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+
+a:focus {
+  text-decoration: none!important;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px
+  }
+}
+
+@media (min-width: 1100px) {
+  body {
+    font-size: 20px
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1366px) {
+  body {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 25px !important;
+  }
+}
+
+@media (min-width: 1680px) {
+  body {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 33px;
+  }
+}
+
+.layui-bg-darkblue {
+  background: url(../images/head.png) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 60px;
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.layui-bg-darkblue p.title {
+  background: url(../images/title.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 692px;
+  height: 35px;
+  float: left;
+  margin-top: 12px;
+}
+
+.layui-bg-darkblue .layui-nav-item {
+  float: right;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child {
+  background: #7faced;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child a {
+  color: #fff;
+  overflow: hidden;
+}
+
+.layui-bg-darkblue .layui-nav-child dd.layui-this a {
+  background-color: #7faced!important;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child a:hover {
+  background: #7faced;
+  color: #fff;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child span {
+  width: 13px;
+  height: 16px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child .person {
+  background: url(../images/person.png) no-repeat center;
+  background-size: cover;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child .message {
+  background: url(../images/message.png) no-repeat center;
+  background-size: cover;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child .password {
+  background: url(../images/changepassword.png) no-repeat center;
+  background-size: cover;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child .speedup {
+  background: url(../images/speedup.png) no-repeat center;
+  background-size: cover;
+}
+
+.layui-bg-darkblue .layui-nav-item .layui-nav-child .quit {
+  background: url(../images/quit.png) no-repeat center;
+  background-size: cover;
+}
+
+.layui-nav-side.layui-nav-darkblue2 {
+  top: 60px;
+  width: 240px;
+  background: #1b559f;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-this>a {
+  background: #2b72cc;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item>a {
+  height: 85px;
+  line-height: 85px;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-child a {
+  height: 50px;
+  line-height: 50px;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span:first-child {
+  width: 28px;
+  height: 23px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  margin-right: 15px;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.home {
+  background: url(../images/home.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.home ,
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.home {
+  background: url(../images/home1.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.news {
+  background: url(../images/news.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.news ,
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.news {
+  background: url(../images/news1.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.person2 {
+  background: url(../images/person2.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.person2 ,
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.person2 {
+  background: url(../images/person2_1.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.report {
+  background: url(../images/report.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.report ,
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.report {
+  background: url(../images/report1.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.person3 {
+  background: url(../images/person3.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.person3 ,
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.person3 {
+  background: url(../images/person3_1.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover {
+  background: #2b72cc;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-bar {
+  background: #6edfff;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-child dd.layui-this a {
+  background: #2b72cc;
+}
+
+.panel_group {
+  width: calc(100% - 240px);
+  position: relative;
+  left: 240px;
+  top: 60px;
+}
+
+.panel_group .panel_top {
+  margin: 30px 30px 10px 25px;
+}
+
+.panel_group .panel_top .panel-heading {
+  height: 70px;
+  line-height: 70px;
+  background: #fff;
+  color: #2a89e7;
+  font-size: 16px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.panel_group .panel_top .panel-heading p {
+  overflow: hidden;
+}
+
+.panel_group .panel_top .panel-heading p:first-child {
+  float: left;
+}
+
+.panel_group .panel_top .panel-heading p:first-child .person4 {
+  display: inline-block;
+  background: url(../images/person4.png) no-repeat center;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  margin: 22px 8px 0px 14px;
+  float: left;
+}
+
+.panel_group .panel_top .panel-heading p:last-child {
+  float: right;
+  margin-right: 30px;
+}
+
+.panel_group .panel_top .panel-heading p:last-child .date {
+  background: url(../images/date.png) no-repeat center;
+  background-size: cover;
+  width: 19px;
+  height: 21px;
+  margin: 24px 8px 0 0;
+  float: left;
+}
+
+.panel_group .panel_middle {
+  margin: 0px 30px 0px 25px;
+  overflow: hidden;
+}
+
+.panel_group .panel_footer {
+  margin: 0px 30px 0px 25px;
+}
+
+.panel_group .panel_middle .panel_center_1 {
+  width: 100%;
+  height: 280px;
+  float: left;
+}
+
+.panel_group .panel_footer .panel_center_1 {
+  width: 100%;
+}
+
+.panel_group .panel_middle .panel_center_2 {
+  width: 100%;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-heading, .panel_group .panel_footer .panel_center_1 .panel-heading {
+  height: 50px;
+  background: #7faced;
+  color: #fff;
+  padding: 0;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-heading h3, .panel_group .panel_middle .panel_center_1 .panel-heading h3 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  overflow: hidden;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-heading h3 .notice {
+  background: url(../images/notice.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  width: 23px;
+  height: 27px;
+  margin: 11px 12px 0 15px;
+  float: left;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-heading h3 .news2 {
+  background: url(../images/news2.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  width: 23px;
+  height: 26px;
+  margin: 12px 12px 0 15px;
+  float: left;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-heading h3 .news2 {
+  background: url(../images/report2.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  width: 23px;
+  height: 27px;
+  margin: 13px 12px 0 15px;
+  float: left;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-heading a.seeMore, .panel_group .panel_middle .panel_center_1 .panel-heading a.seeMore {
+  display: inline-block;
+  background: url(../images/arrow_right.png) no-repeat center;
+  background-size: cover;
+  width: 6px;
+  height: 10px;
+  margin: 20px 12px 0 0;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li {
+  position: relative;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body {
+  height: calc(100% - 50px);
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul {
+  height: calc(100% - 5px);
+  overflow: hidden;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul li {
+  height: 36px;
+  line-height: 36px;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li:before {
+  content: url(../images/Quadrilateral.png);
+  width: 13px;
+  height: 13px;
+  position: absolute;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li p {
+  margin-left: 20px;
+  width: calc(100% - 15px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li p a {
+  font-size: 14px;
+  color: #313131;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-body .btn.btn-new {
+  width: 90px;
+  height: 27px;
+  line-height: 27px;
+  padding: 0;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-body table {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-body table tr th {
+  color: #000000;
+  font-size: 14px;
+  text-align: center;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-body table tr {
+  height: 33px;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-body table tr td {
+  color: #000000;
+  font-size: 12px;
+  text-align: center;
+}
+
+.panel_group .panel_footer .panel_center_1 .panel-body table tr td button {
+  font-size: 12px;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+}

@@ -1,0 +1,46 @@
+.login-right .panel {
+    height: 550px;
+}
+
+.login-right .panel .panel_1 .input_group {
+    margin-top: 17px;
+}
+
+.login-right .panel .panel_1 .input_group .input4 {
+    margin-bottom: 10px;
+}
+
+.login-right .panel .panel_1 .input_group .input5 {
+    margin-bottom: 10px;
+}
+
+.login-right .panel .panel_1 .input_group .input4 p:after {
+    content: url(../images/kiosk.png);
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+}
+
+.login-right .panel .panel_1 .input_group .input5 p:after {
+    content: url(../images/honor.png);
+    width: 23px;
+    height: 28px;
+    position: absolute;
+    top: 10px;
+    left: 12px;
+}
+
+.check_group_left {
+    margin-left: 61px;
+}
+
+.check_group_left label a {
+    color: #087fff;
+    text-decoration: underline;
+}
+
+.check_group_left label a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,82 @@
+.panel-registered .panel-heading {
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.panel-registered .panel-heading a {
+    float: left;
+    width: 50%;
+    display: block;
+    background: #e4e4e4;
+    color: #1b559f;
+}
+
+.panel-registered a .registered {
+    display: inline-block;
+    background: url(../images/registered1.png) no-repeat center;
+    background-size: cover;
+    margin: 13px 15px 0 15px;
+    float: left;
+    width: 23px;
+    height: 27px;
+}
+
+.panel-registered a.active {
+    background: #7faced;
+    color: #fff;
+}
+
+.panel-registered a.active .registered {
+    display: inline-block;
+    background: url(../images/registered.png) no-repeat center;
+    background-size: cover;
+    margin: 13px 15px 0 15px;
+    float: left;
+    width: 23px;
+    height: 27px;
+}
+
+.panel-body>button {
+    width: 90px;
+    height: 27px;
+    line-height: 27px;
+    padding: 0;
+}
+
+.panel-body .table.table-striped {
+    margin-top: 10px;
+}
+
+.panel-body .table.table-striped tr {
+    height: 33px;
+    line-height: 33px;
+}
+
+.panel-body .table.table-striped tr * {
+    text-align: center;
+}
+
+.panel-body .table.table-striped tr th {
+    font-size: 14px;
+    color: #313131;
+}
+
+.panel-body .table.table-striped tr td {
+    font-size: 12px;
+    color: #313131;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.panel-body .table.table-striped tr td button {
+    width: 50px;
+    height: 23px;
+    line-height: 23px;
+    padding: 0;
+}
+
+#entered {
+    display: none;
+}

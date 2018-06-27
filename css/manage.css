@@ -1,0 +1,16 @@
+.panel-heading.lightblue {
+    height: 50px;
+    background: #7faced;
+    color: #fff;
+    padding: 0;
+}
+
+.panel-heading.lightblue p span.registered {
+    display: inline-block;
+    background: url(../images/registered.png) no-repeat center;
+    background-size: cover;
+    margin: 13px 15px 0 15px;
+    float: left;
+    width: 23px;
+    height: 27px;
+}
