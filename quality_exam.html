@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./layui/css/layui.css">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/quality.css">
+    <style>
+        html,
+        body {
+            background: #e9f0fa !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--顶部导航  -->
+    <div class="bg-quality">
+        <p class="title center-block"></p>
+    </div>
+    <!-- 侧边导航 -->
+    <ul class="layui-nav layui-nav-tree layui-nav-side layui-nav-darkblue2">
+        <div class="person_message">
+            <div class="avatar">
+                <img src="./images/avatar.png" class="img-circle center-block" alt="">
+                <p class="text-center">李珍妮</p>
+                <hr>
+            </div>
+            <p>身份证号:</p>
+            <p>371311199708105589</p>
+            <hr>
+            <p>代理机构名称:</p>
+            <p>山东信合建筑</p>
+            <hr>
+        </div>
+        <li>
+            <div class="count text-center center-block">
+                <p>倒计时</p>
+                <h3>36:58</h3>
+            </div>
+        </li>
+    </ul>
+    <!-- 右侧面板区 -->
+    <div class="panel_group">
+        <!-- 备注:切换iframe的src地址来切换右侧的内容网页 -->
+        <iframe src="./simulating1.html" frameborder="0"></iframe>
+    </div>
+    <script src="./layui/layui.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="./js/global.js"></script>
+    <script>
+        layui.use('element', function () {
+            var element = layui.element;
+        })
+    </script>
+</body>
+
+</html>

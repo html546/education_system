@@ -500,3 +500,19 @@ html, body {
   font-size: 14px;
   color: #313131;
 }
+
+.count {
+  background: url(../images/count.png) no-repeat center;
+  background-size: cover;
+  width: 132px;
+  height: 132px;
+  overflow: hidden;
+}
+
+.count p {
+  margin-top: 35px;
+}
+
+.count h3 {
+  font-size: 26px;
+}

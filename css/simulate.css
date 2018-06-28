@@ -1,0 +1,94 @@
+.panel-body img {
+    margin: 60px auto 50px;
+}
+
+.panel_text {
+    margin-bottom: 66px;
+}
+
+.panel_text p {
+    height: 30px;
+    line-height: 30px;
+    color: #454544;
+}
+
+.panel_text p span {
+    color: #5e5e5e;
+}
+
+.btn.btn-primary.start {
+    width: 300px;
+    height: 50px;
+    background: #087fff;
+    color: #fff;
+    padding: 0;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.prev_question:focus, .prev_question:hover, .prev_question {
+    background: #d8d8d8;
+    color: #fff;
+    width: 30%;
+    margin-right: 5%
+}
+
+.next_question:focus, .next_question:hover, .next_question {
+    width: 30%;
+    background: #087fff;
+    color: #fff;
+    margin-right: 5%;
+}
+
+.end {
+    width: 29%;
+}
+
+.panel-body>a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.panel-body>a.right {
+    background: #36c982;
+    color: #fff;
+}
+
+.panel-body>a.wrong {
+    background: #ff6060;
+    color: #fff;
+}
+
+.panel-body>a.default {
+    border: 1px solid #eee;
+}
+
+.panel-body>a.default.default_active {
+    border: 1px solid #0e82ff;
+    color: #0e82ff;
+}
+
+.demo-class .layui-layer-content p {
+    color: #979898;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.demo-class {
+    width: 630px!important;
+}
+
+.demo-class .layui-layer-content {
+    width: 630px;
+    height: 370px;
+}
+
+.demo-class .layui-layer-content h3 {
+    color: #ff6060;
+    font-size: 102px;
+    text-align: center;
+    margin-top: 70px;
+}
