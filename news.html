@@ -58,7 +58,7 @@
     <!-- 侧边导航 -->
     <ul class="layui-nav layui-nav-tree layui-nav-side layui-nav-darkblue2">
         <li class="layui-nav-item">
-            <a href="#">
+            <a href="./index.html">
                 <span class="home"></span> 首页</a>
         </li>
         <li class="layui-nav-item layui-nav-itemed">
@@ -82,10 +82,10 @@
                 <span class="report"></span> 人员上报</a>
             <dl class="layui-nav-child">
                 <dd>
-                    <a href="./registered.html">已注册从业人员</a>
+                    <a href="./registered.html#registered" onClick="callPanel('registered')">已注册从业人员</a>
                 </dd>
                 <dd>
-                    <a href="#">已报名从业人员</a>
+                    <a href="./registered.html#entered" onClick="callPanel('entered')">已报名从业人员</a>
                 </dd>
             </dl>
         </li>
@@ -101,6 +101,7 @@
     <script src="./layui/layui.js"></script>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="./js/global.js"></script>
     <script>
         layui.use('element', function () {
             var element = layui.element;

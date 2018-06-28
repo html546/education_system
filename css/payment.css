@@ -1,0 +1,83 @@
+button.btn-lightblue.focus, button.btn-lightblue:focus, button.btn-lightblue:hover {
+    color: #fff;
+}
+
+.panel-heading.lightblue p span.payment {
+    background: url(../images/payment.png) no-repeat center;
+    background-size: cover;
+}
+
+.radio-group {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+
+.radio-group input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+}
+
+.radio-group input[type="radio"]+.falsy_radio {
+    background: url(../images/radio_nocheck.png) no-repeat center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.radio>label {
+    margin-bottom: 20px;
+}
+
+.radio-group input[type="radio"]:checked+.falsy_radio {
+    background: url(../images/radio_check.png) no-repeat center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wechat {
+    display: inline-block;
+    width: 29px;
+    height: 24px;
+    background: url(../images/wechat.png) no-repeat center;
+    background-size: cover;
+    float: left;
+    margin-right: 10px;
+}
+
+.alipay {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(../images/alipay.png) no-repeat center;
+    background-size: cover;
+    float: left;
+    margin-right: 10px;
+}
+
+.panel-heading-left p {
+    text-indent: 45px;
+    font-size: 16px;
+    color: #161616;
+}
+
+.panel-heading-left p span {
+    color: #ff3c3c;
+    font-size: 20px;
+}
+
+.panel-heading-right p {
+    text-indent: 25px;
+}

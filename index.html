@@ -57,7 +57,7 @@
     <!-- 侧边导航 -->
     <ul class="layui-nav layui-nav-tree layui-nav-side layui-nav-darkblue2">
         <li class="layui-nav-item">
-            <a href="#" class="active">
+            <a href="./index.html" class="active">
                 <span class="home"></span> 首页</a>
         </li>
         <li class="layui-nav-item">
@@ -73,7 +73,7 @@
             </dl>
         </li>
         <li class="layui-nav-item">
-            <a href="#">
+            <a href="./manage.html">
                 <span class="person2"></span> 人员管理</a>
         </li>
         <li class="layui-nav-item">
@@ -81,10 +81,10 @@
                 <span class="report"></span> 人员上报</a>
             <dl class="layui-nav-child">
                 <dd>
-                    <a href="./registered.html">已注册从业人员</a>
+                    <a href="./registered.html#registered" onClick="callPanel('registered')">已注册从业人员</a>
                 </dd>
                 <dd>
-                    <a href="#">已报名从业人员</a>
+                    <a href="./registered.html#entered" onClick="callPanel('entered')">已报名从业人员</a>
                 </dd>
             </dl>
         </li>
@@ -213,7 +213,9 @@
                                     <th>操作</th>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>01</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -226,7 +228,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>02</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -239,7 +243,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>03</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -252,7 +258,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>04</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -265,7 +273,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>05</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -278,7 +288,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>06</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -291,7 +303,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>07</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -304,7 +318,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>08</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -317,7 +333,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><input type="checkbox"></td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
                                     <td>09</td>
                                     <td>王小庚</td>
                                     <td>245755199605202266</td>
@@ -339,6 +357,7 @@
     <script src="./layui/layui.js"></script>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="./js/global.js"></script>
     <script>
         layui.use('element', function () {
             var element = layui.element;

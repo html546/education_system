@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/registered.css">
+    <link rel="stylesheet" href="./css/manage.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <style>
+        html,
+        body {
+            background: #e9f0fa !important;
+        }
+
+        button.btn-lightblue {
+            background: #087fff;
+            color: #fff;
+            border: none;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news_panel">
+        <h3 class="text-primary">缴费</h3>
+        <!-- 面包屑 -->
+        <div class="ol breadcrumb">
+            <li>
+                首页
+            </li>
+            <li>
+                人员管理
+            </li>
+            <li>
+                已上报从业人员
+            </li>
+            <li>
+                <a href="#">
+                    缴费
+                </a>
+            </li>
+        </div>
+        <!-- 新闻面板 -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default panel-registered">
+                    <div class="panel-heading lightblue">
+                        <p>
+                            <span class="registered payment"></span> 缴费</p>
+                    </div>
+                    <div class="panel-body" id="registered">
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading panel-heading-left">
+                                    <p>需支付报名费
+                                        <span class="text-danger">158</span>元</p>
+                                </div>
+                                <div class="panel-body">
+                                    <form action="" class="form-horizontal">
+                                        <div class="form-group">
+                                            <label for="" class="control-label col-md-2">支付方式</label>
+                                            <div class="col-md-5 radio">
+                                                <label for="wechat">
+                                                    <div class="radio-group">
+                                                        <input type="radio" name="pay" id="wechat" value="wechat">
+                                                        <span class="falsy_radio"></span>
+                                                    </div>
+                                                    <span class="wechat"></span>微信支付
+                                                </label>
+                                                <br>
+                                                <label for="alipay">
+                                                    <div class="radio-group">
+                                                        <input type="radio" name="pay" id="alipay" value="alipay">
+                                                        <span class="falsy_radio"></span>
+                                                    </div>
+                                                    <span class="alipay"></span>支付宝支付
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-md-3">
+                                                <button type="button" class="btn btn-lightblue btn-block">
+                                                    提交
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading panel-heading-right">
+                                    <p>缴纳人员信息</p>
+                                </div>
+                                <div class="panel-body">
+                                    <p>姓名:
+                                        <span>李伟</span>
+                                    </p>
+                                    <p>身份证号:
+                                        <span>371311199688880</span>
+                                    </p>
+                                    <p>手机号:
+                                        <span>158539088888</span>
+                                    </p>
+                                    <p>公司名称:
+                                        <span>山东临工建筑有限公司</span>
+                                    </p>
+                                    <p>性别:
+                                        <span>男</span>
+                                    </p>
+                                    <p>报名状态:
+                                        <span>已报名</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>
