@@ -1,0 +1,120 @@
+.lightblue p span.mistake {
+    background: url(../images/mistake.png) no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    width: 23px;
+    height: 27px;
+    margin: 13px 12px 0 15px;
+    float: left;
+}
+
+.form-group {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #dfdfdf;
+}
+
+.form-group.truly {
+    border: 1px solid #087fff;
+}
+
+.form-group.falsy {
+    border: 1px solid #ff6060;
+}
+
+.radio-group {
+    float: left;
+    margin-right: 30px;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    top: 17px;
+}
+
+.radio-group .truly_radio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.radio-group .truly_radio+.false_radio {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/radio_nocheck.png) no-repeat center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+}
+
+.radio-group .truly_radio:checked+.false_radio {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../images/radio_check.png) no-repeat center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+}
+
+.radio-group .falsy_radio {
+    display: inline-block;
+    background: url(../images/radio_check.png) no-repeat center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.radio-group .error {
+    display: inline-block;
+    background: url(../images/error_radio.png) no-repeat center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.radio-group .no_check {
+    display: inline-block;
+    background: url(../images/radio_nocheck.png) no-repeat center;
+    background-size: cover;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.prev_question:focus, .prev_question:hover, .prev_question {
+    background: #d8d8d8;
+    color: #fff;
+    width: 48%;
+}
+
+.next_question:focus, .next_question:hover, .next_question {
+    width: 48%;
+    background: #087fff;
+    color: #fff;
+}
+
+.analysis {
+    margin-top: 50px;
+}
+
+.btn.answer_progress {
+    color: #087fff;
+    border-color: #087fff;
+}
+
+.btn.mistake_pag {
+    background: #087fff;
+}

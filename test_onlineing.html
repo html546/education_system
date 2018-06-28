@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/registered.css">
+    <link rel="stylesheet" href="./css/manage.css">
+    <link rel="stylesheet" href="./css/test_online.css">
+    <style>
+        html,
+        body {
+            background: #e9f0fa !important;
+        }
+
+        button.btn-lightblue {
+            background: #087fff;
+            color: #fff;
+            border: none;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="news_panel">
+        <h3 class="text-primary">在线练习</h3>
+        <!-- 面包屑 -->
+        <div class="ol breadcrumb">
+            <li>
+                首页
+            </li>
+            <li>
+                <a href="#">
+                    在线练习
+                </a>
+            </li>
+        </div>
+        <!-- 新闻面板 -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default panel-registered">
+                    <div class="panel-heading lightblue">
+                        <p>
+                            <span class="mistake"></span> 在线练习</p>
+                    </div>
+                    <div class="panel-body" id="registered">
+                        <p>
+                            <button type="button" class="btn btn-default answer_progress">
+                                <span>15</span>/1000</button>
+                            <button type="button" class="btn btn-primary mistake_pag">选择题</button>
+                            证劵公司开展客户资产管理业务，应当在资产管理合同中明确规定，投资风险由▁▁▁▁.
+                        </p>
+                        <form action="">
+                            <div class="form-group col-md-8">
+                                <div class="radio-group">
+                                    <input type="radio" value="A" name="check1" id="A" class="truly_radio">
+                                    <span class="false_radio"></span>
+                                </div>
+                                <label for="A">A.客户自行承担</label>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <div class="radio-group">
+                                    <input type="radio" value="B" name="check1" id="B" class="truly_radio">
+                                    <span class="false_radio"></span>
+                                </div>
+                                <label for="B">B.证劵公司承担</label>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <div class="radio-group">
+                                    <input type="radio" value="C" name="check1" id="C" class="truly_radio">
+                                    <span class="false_radio"></span>
+                                </div>
+                                <label for="C">C.证劵公司经理承担</label>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <div class="radio-group">
+                                    <input type="radio" value="D" name="check1" id="D" class="truly_radio">
+                                    <span class="false_radio"></span>
+                                </div>
+                                <label for="D">D.客户和证劵公司按比例承担</label>
+                            </div>
+                            <div class="col-md-8 clearfix" style="padding: 0;">
+                                <button type="button" class="btn prev_question">上一题</button>
+                                <button type="button" class="btn next_question pull-right">下一题</button>
+                            </div>
+                            <!-- <div class="panel panel-default analysis col-md-10">
+                                <div class="panel-body">
+                                    <p>答案:A</p>
+                                    <p>解析:证劵公司开展客户资产管理业务,应当在资产管理合同中明确规定,投资风险由客户自行承担.</p>
+                                </div>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

@@ -172,8 +172,7 @@ html, body {
   background-size: contain;
 }
 
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.home ,
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.home {
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.home, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.home {
   background: url(../images/home1.png) no-repeat center;
   background-size: contain;
 }
@@ -183,8 +182,7 @@ html, body {
   background-size: contain;
 }
 
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.news ,
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.news {
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.news, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.news {
   background: url(../images/news1.png) no-repeat center;
   background-size: contain;
 }
@@ -194,8 +192,7 @@ html, body {
   background-size: contain;
 }
 
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.person2 ,
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.person2 {
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.person2, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.person2 {
   background: url(../images/person2_1.png) no-repeat center;
   background-size: contain;
 }
@@ -205,8 +202,7 @@ html, body {
   background-size: contain;
 }
 
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.report ,
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.report {
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.report, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.report {
   background: url(../images/report1.png) no-repeat center;
   background-size: contain;
 }
@@ -216,9 +212,43 @@ html, body {
   background-size: contain;
 }
 
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.person3 ,
-.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.person3 {
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.person3, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.person3 {
   background: url(../images/person3_1.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.practice {
+  background: url(../images/practice.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.practice, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.practice {
+  background: url(../images/practice_active.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.error {
+  background: url(../images/error_problem.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.error, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.error {
+  background: url(../images/error_problem_active.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.simulate {
+  background: url(../images/simulate.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a.active>span.simulate, .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a:hover>span.simulate {
+  background: url(../images/simulate_active.png) no-repeat center;
+  background-size: contain;
+}
+
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span.reeducate {
+  background: url(../images/reeducate.png) no-repeat center;
   background-size: contain;
 }
 
@@ -354,6 +384,16 @@ html, body {
   float: left;
 }
 
+.panel_group .panel_footer .panel_center_1 .panel-heading h3 .mistake {
+  background: url(../images/mistake.png) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  width: 23px;
+  height: 27px;
+  margin: 13px 12px 0 15px;
+  float: left;
+}
+
 .panel_group .panel_footer .panel_center_1 .panel-heading a.seeMore, .panel_group .panel_middle .panel_center_1 .panel-heading a.seeMore {
   display: inline-block;
   background: url(../images/arrow_right.png) no-repeat center;
@@ -434,4 +474,29 @@ html, body {
   width: 50px;
   height: 24px;
   padding: 0;
+}
+
+.mistake_content ul {
+  height: 270px;
+  overflow: hidden;
+}
+
+.mistake_content ul li {
+  width: 95%;
+  margin-left: 5%;
+  list-style: disc!important;
+  height: 30px;
+  line-height: 30px;
+}
+
+.mistake_content ul li p {
+  width: 95%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.mistake_content ul li p a {
+  font-size: 14px;
+  color: #313131;
 }
