@@ -73,6 +73,15 @@ a:focus {
 .panel.panel-lightblue .panel-body>ul li p a {
     font-size: 14px;
     color: #313131;
+    overflow: hidden;
+}
+
+.panel.panel-lightblue .panel-body>ul li p a span:first-child {
+    float: left;
+}
+
+.panel.panel-lightblue .panel-body>ul li p a span:last-child {
+    float: right;
 }
 
 .news_content h3 {
