@@ -695,6 +695,7 @@
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.js"></script>
     <script>
         $(function () {
             $('.panel-heading a').click(function () {
@@ -702,8 +703,8 @@
                 $(this).addClass('active').siblings('a').removeClass('active');
                 $('.panel-body').eq(index).show().siblings('.panel-body').hide();
             })
-            $('.payment').click(function(){
-                $('iframe',parent.document).attr('src','./payment.html');
+            $('.payment').click(function () {
+                $('iframe', parent.document).attr('src', './payment.html');
             })
         })
         function show(child) {

@@ -429,7 +429,6 @@ html, body {
 }
 
 .panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li p {
-  margin-left: 20px;
   width: calc(100% - 15px);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -439,6 +438,18 @@ html, body {
 .panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li p a {
   font-size: 14px;
   color: #313131;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li p a span:first-child {
+  float: left;
+}
+
+.panel_group .panel_middle .panel_center_1 .panel-body ul.Quadrilateral li p a span:last-child {
+  float: right;
 }
 
 .panel_group .panel_footer .panel_center_1 .panel-body .btn.btn-new {
