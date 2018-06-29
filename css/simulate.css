@@ -47,6 +47,7 @@
 .panel-body>a[type="button"] {
     width: 40px;
     height: 40px;
+    margin-bottom: 10px;
 }
 
 .panel-body>a.right {
@@ -54,6 +55,8 @@
     color: #fff;
     border-radius: 50%;
     border: none;
+    padding: 0;
+    line-height: 40px;
 }
 
 .panel-body>a.wrong {
@@ -61,11 +64,15 @@
     color: #fff;
     border-radius: 50%;
     border: none;
+    padding: 0;
+    line-height: 40px;
 }
 
 .panel-body>a.default {
     border: 1px solid #eee;
     border-radius: 50%;
+    padding: 0;
+    line-height: 40px;
 }
 
 .panel-body>a.default.default_active {

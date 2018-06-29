@@ -144,6 +144,11 @@ html, body {
   background: #1b559f;
 }
 
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-item {
+  background: #1e5db7;
+  border-bottom: 1px solid #1b559f;
+}
+
 .layui-nav-darkblue2.layui-nav-tree .layui-this>a {
   background: #2b72cc;
 }
@@ -153,9 +158,17 @@ html, body {
   line-height: 85px;
 }
 
+.layui-nav-darkblue2.layui-nav-tree .layui-nav-itemed>.layui-nav-child {
+  background-color: #1b559f!important;
+}
+
 .layui-nav-darkblue2.layui-nav-tree .layui-nav-child a {
   height: 50px;
   line-height: 50px;
+  padding-left: 30px;
+  border-image: url(../images/line.png);
+  border-bottom: 1px solid;
+  color: #6edfff;
 }
 
 .layui-nav-darkblue2.layui-nav-tree .layui-nav-item a>span:first-child {
@@ -518,6 +531,7 @@ html, body {
   width: 132px;
   height: 132px;
   overflow: hidden;
+  margin-top: 70px;
 }
 
 .count p {
